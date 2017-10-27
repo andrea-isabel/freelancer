@@ -16,14 +16,42 @@ header, footer {
     overflow: auto;
 }
 
-header, h1, h2 {
-    text-transform: uppercase;
-}
-
 main {
     margin-top: 109px;
 }
 
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #18bc9c;
+    color: #fff;
+}
+
+section:nth-of-type(even) {
+    background-color: #fff;
+    color: #212529;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 4.75em;
+    letter-spacing: 0px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
 /* Estilos de header */
 
 header {
@@ -31,40 +59,36 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 35px;
+    padding: 35px 120px;
     z-index: 1000;
 }
 
 .brand {
     font-size: 2em;
     float: left;
-    margin-left: 40px;
 }
 
 .menu {
     float: right;
     position: absolute;
-    right: 80px;
+    right: 120px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .menu ul {
     list-style: none;
+    overflow: hidden;
 }
 
 .menu li {
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.menu li:first-child {
-    margin-left: 0;
+    float: left;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 8px;
 }
 
 .menu a:hover {
@@ -73,7 +97,6 @@ header {
 
 /* Estilos home */
 
-#home {
-    background-color: #18bc9c;
-    height: 400px;
+#home figure {
+    margin-bottom: 25px;
 }
