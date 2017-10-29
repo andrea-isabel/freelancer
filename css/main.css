@@ -7,6 +7,7 @@
 body {
     font-family: 'Lato', sans-serif;
     text-align: center;
+    line-height: 1.5;
 }
 
 header, footer {
@@ -49,6 +50,7 @@ h1 {
 h2 {
     font-size: 3em;
     line-height: 1.2;
+    margin-top: 10px;
 }
 
 .text-uppercase {
@@ -76,6 +78,7 @@ a {
     content: "\f005";
     color: #fff;
     font-size: 2em;
+    line-height: 1;
     position: relative;
     top: -0.4em;
     margin: 0;
@@ -161,4 +164,84 @@ header {
 .work img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+/* Estilos about */
+
+.about-text {
+    column-count: 2;
+    column-width: 256px;
+    column-gap: 0;
+    text-align: left;
+    padding: 0 20%;
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    padding: 0 15px;
+}
+
+button.download {
+    padding: 0 15px;
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button.download:hover {
+    background-color: #fff;
+    color: #18bc9c;
+    transition-duration: 0.5s;
+}
+
+/* Estilos contact */
+
+.contact-form {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input {
+    width: 100%;
+    border: none;
+    margin: 25px 0;
+    padding: 0 0 40px 0;
+    color: #868e96;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.contact-form input.message {
+    padding-bottom: 185px;
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+button.send {
+    padding: 15px;
+    background-color: #18bc9c;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+button.send:hover {
+    transition-duration: 0.30s;
+    background-color: #128f76;
 }
