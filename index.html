@@ -1,69 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Freelancer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Freelancer</title>
 </head>
+
 <body>
-    <header class="text-uppercase">
-        <span class="brand"><a href="#">Start Bootstrap</a></span>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+  <header class="text-uppercase">
+    <span class="brand">
+      <a href="#">Start Bootstrap</a>
+    </span>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <img src="assets/images/profile.png" alt="Profile">
+      <h1 class="text-uppercase">Start Bootstrap</h1>
+      <hr class="star-line">
+      <p>Web Developer - Graphic Artist - User Experience Designer</p>
+    </section>
+    <section id="portfolio">
+      <h2 class="text-uppercase">Portfolio</h2>
+      <hr class="star-line">
+      <div class="work">
+        <figure>
+          <img src="assets/images/portfolio/cabin.png" alt="">
+        </figure>
+        <figure>
+          <img src="assets/images/portfolio/game.png" alt="">
+        </figure>
+        <figure>
+          <img src="assets/images/portfolio/cake.png" alt="">
+        </figure>
+        <figure>
+          <img src="assets/images/portfolio/safe.png" alt="">
+        </figure>
+        <figure>
+          <img src="assets/images/portfolio/circus.png" alt="">
+        </figure>
+        <figure>
+          <img src="assets/images/portfolio/submarine.png" alt="">
+        </figure>
+      </div>
+    </section>
+    <section id="about">
+      <h2 class="text-uppercase">About</h2>
+      <hr class="star-line">
+      <div class="about-text">
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
+          including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+          <br> Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic
+          artist looking to share your projects, this template is the perfect starting point!</p>
+      </div>
+      <button class="download">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        Download Theme
+      </button>
+    </section>
+    <section id="contact">
+      <h2 class="text-uppercase">Contact me</h2>
+      <hr class="star-line">
+      <form class="contact-form" action="">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email Adress">
+        <input type="text" placeholder="Phone Number">
+        <input class="message" type="text" placeholder="Message">
+        <button class="send" type="submit">
+          <span>Send</span>
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-info">
+      <div class="footer-location">
+        <h3 class="text-uppercase">Location</h3>
+        <p>3481 Melrose Place
+          <br> Beverly Hills, CA 90210</p>
+      </div>
+      <div class="footer-social">
+        <h3 class="text-uppercase">Around the web</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <main>
-      <section id="home">
-        <img src="assets/images/profile.png" alt="Profile">
-        <h1 class="text-uppercase">Start Bootstrap</h1>
-        <hr class="star-line">
-        <p>Web Developer - Graphic Artist - User Experience Designer</p>
-      </section>
-      <section id="portfolio">
-          <h2 class="text-uppercase">Portfolio</h2>
-          <hr class="star-line">
-          <div class="work">
-              <figure><img src="assets/images/portfolio/cabin.png" alt=""></figure>
-              <figure><img src="assets/images/portfolio/game.png" alt=""></figure>
-              <figure><img src="assets/images/portfolio/cake.png" alt=""></figure>
-              <figure><img src="assets/images/portfolio/safe.png" alt=""></figure>
-              <figure><img src="assets/images/portfolio/circus.png" alt=""></figure>
-              <figure><img src="assets/images/portfolio/submarine.png" alt=""></figure>
-          </div>
-        </section>
-      <section id="about">
-          <h2 class="text-uppercase">About</h2>
-          <hr class="star-line">
-          <div class="about-text">
-              <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization. <br>
-                Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
-          <button class="download">
-            <i class="fa fa-download" aria-hidden="true"></i>
-            Download Theme
-          </button>
-      </section>
-      <section id="contact">
-          <h2 class="text-uppercase">Contact me</h2>
-          <hr class="star-line">
-          <form class="contact-form" action="">
-              <input type="text" placeholder="Name">
-              <input type="text" placeholder="Email Adress">
-              <input type="text" placeholder="Phone Number">
-              <input class="message" type="text" placeholder="Message">
-              <button class="send" type="submit">
-                <span>Send</span>
-            </button>
-          </form>
-      </section>
-    </main>
+      </div>
+      <div class="footer-about">
+        <h3 class="text-uppercase">About freelancer</h3>
+        <p>Freelance is a free to use, open source Bootstrap theme created by
+          <a href="#">Start Bootstrap</a>.</p>
+      </div>
+    </div>
+    <span class="copyright">Copyright © Your Website 2017</span>
+  </footer>
 </body>
+
 </html>
