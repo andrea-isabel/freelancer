@@ -203,6 +203,7 @@ header {
 
 .work .caption:hover {
     opacity: 1;
+    transition: opacity .5s;
 }
 
 .work img {
