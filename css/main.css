@@ -108,7 +108,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 35px 6%;
+    padding: 35px 9%;
     z-index: 1000;
 }
 
@@ -120,7 +120,7 @@ header {
 .menu {
     float: right;
     position: absolute;
-    right: 6%;
+    right: 9%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -135,13 +135,25 @@ header {
 }
 
 .menu a {
+    display: inline-block;
     font-size: 1em;
     letter-spacing: 1px;
     padding: 8px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.menu a:visited {
+    background-color: #18bc9c;
+    color: #fff;
 }
 
 .menu a:hover {
     color: #18bc9c;
+}
+
+.menu a:active {
+    color: #fff;
 }
 
 /* Estilos home */
@@ -159,17 +171,46 @@ header {
 /* Estilos portfolio */
 
 .work {
-    padding: 0 45px;
+    padding: 0 9%;
     column-count: 3;
     column-gap: 30px;
     break-inside: avoid;
     margin-bottom: 5px;
 }
 
+.work figure {
+    position: relative;
+    line-height: 1;
+}
+
+.work .caption {
+    position: absolute;
+    background-color: rgba(24,188,156,.9);
+    color: #fff;
+    width: 100%;
+    height: calc(100% - 30px);
+    font-size: 3em;
+    opacity: 0;
+    cursor: pointer;
+    align-content: center;
+}
+
+.work .caption i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.work .caption:hover {
+    transition-duration: .15s;
+    opacity: 1;
+}
+
 .work img {
     width: 100%;
     margin-bottom: 30px;
     break-inside: avoid;
+    z-index: 2;
 }
 
 /* Estilos about */
@@ -199,13 +240,12 @@ button.download {
     border: 2px solid #fff;
     border-radius: 5px;
     cursor: pointer;
+    transition: .5s;
 }
-
 
 button.download:hover {
     background-color: #fff;
     color: #18bc9c;
-    transition-duration: 0.5s;
 }
 
 /* Estilos contact */
