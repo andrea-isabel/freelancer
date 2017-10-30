@@ -240,7 +240,7 @@ button.download {
     border: 2px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-    transition: .5s;
+    transition: background-color .25s, color .25s;
 }
 
 button.download:hover {
@@ -295,9 +295,10 @@ button.send:hover {
 /* Estilos footer */
 
 footer .footer-info {
-    padding: 55px 9% 45px;
+    padding: 45px 9% 45px;
     column-count: 3;
     column-width: 200px;
+    column-gap: 40px;
 }
 
 .footer-info div {
@@ -306,11 +307,12 @@ footer .footer-info {
 
 .footer-info h3 {
     line-height: 1.2;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .footer-info p {
     font-size: 1.25em;
+    line-height: 1.5;
 }
 
 .footer-social ul{
