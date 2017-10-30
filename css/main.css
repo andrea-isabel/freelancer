@@ -229,8 +229,8 @@ header {
     padding: 0 15px;
 }
 
-button.download {
-    padding: 0 15px;
+.download {
+    padding: 10px 15px;
     height: 50px;
     background-color: transparent;
     color: #fff;
@@ -240,10 +240,10 @@ button.download {
     border: 2px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color .25s, color .25s;
+    transition: background-color .25s;
 }
 
-button.download:hover {
+.download:hover {
     background-color: #fff;
     color: #18bc9c;
 }
