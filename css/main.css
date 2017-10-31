@@ -183,7 +183,7 @@ header {
     line-height: 1;
 }
 
-.work .caption {
+.caption {
     position: absolute;
     background-color: rgba(24,188,156,.9);
     color: #fff;
@@ -193,17 +193,17 @@ header {
     opacity: 0;
     cursor: pointer;
     align-content: center;
+    transition: opacity .5s;
 }
 
-.work .caption i{
+.caption i{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.work .caption:hover {
+.caption:hover {
     opacity: 1;
-    transition: opacity .5s;
 }
 
 .work img {
