@@ -180,7 +180,8 @@ header {
 
 .work figure {
     position: relative;
-    line-height: 1;
+    line-height: 0;
+    margin-bottom: 30px;
 }
 
 .caption {
@@ -188,7 +189,7 @@ header {
     background-color: rgba(24,188,156,.9);
     color: #fff;
     width: 100%;
-    height: calc(100% - 32px);
+    height: 100%;
     font-size: 3em;
     opacity: 0;
     cursor: pointer;
@@ -208,7 +209,6 @@ header {
 
 .work img {
     width: 100%;
-    margin-bottom: 30px;
     break-inside: avoid;
     z-index: 2;
 }
